@@ -2,20 +2,20 @@ def mail(email):
     email = email.strip().lower()
     if '@' not in email:
         return False
-    a = email.split("@")
-    if len(a) != 2:
+    symbol = email.split("@")
+    if len(symbol) != 2:
         return False
-    b = a[1]
-    if "." not in b or b.startswith(".") or b.endswith("."):
+    dot = symbol[1]
+    if "." not in dot or dot.startswith(".") or dot.endswith("."):
         return False
     return True
-    print("ПРОВЕРКА EMAIL")
-    while True:
-        x = input("Введите email (или 'выход' для того что бы выйти): ")
-        if x.lower() in ['выход']: 
-            print("Пока, спасибо что использовали мой код") 
-            break
-        if mail(x):
-            print("✅Ваш email:",x.strip(),"корректен!")
-        else:   
-            print("❌ОШИБКА:", x , "не является правильным email.")
+print("ПРОВЕРКА EMAIL")
+while True:
+    user = input("Введите email (или 'выход' для того что бы выйти): ")
+    if user.lower() in ['выход']: 
+        print("Пока, спасибо что использовали мой код") 
+        break
+    if mail(user):
+        print("✅Ваш email:",user.strip(),"корректен!")
+    else:   
+        print("❌ОШИБКА:", user , "не является правильным email.")
