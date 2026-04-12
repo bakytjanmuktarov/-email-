@@ -4,7 +4,9 @@ def mail(email):
         return False
     symbol = email.split("@")
     if len(symbol) != 2:
-        return False    
+        return False   
+    if len(symbol[0]) == 0 or len(symbol[1]) == 0:
+        return False 
     dot = symbol[1]
     if "." not in dot or dot.startswith(".") or dot.endswith("."):    
         return False
