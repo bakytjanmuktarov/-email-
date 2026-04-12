@@ -15,3 +15,5 @@ def mail(email):
         if x.lower() in ['выход']: 
             print("Пока, спасибо что использовали мой код") 
             break
+        if mail(x):
+            print("✅Ваш email:",x.strip(),"корректен!")
