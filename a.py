@@ -10,3 +10,5 @@ def mail(email):
         return False
     return True
     print("ПРОВЕРКА EMAIL")
+    while True:
+        x = input("Введите email (или 'выход' для того что бы выйти): ")
