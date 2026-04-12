@@ -17,3 +17,5 @@ while True:
         break    
     if mail(user):
         print("✅Ваш email:",user.strip(),"корректен!")
+    else:   
+        print("❌ОШИБКА:", user , "не является правильным email.")
