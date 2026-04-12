@@ -8,3 +8,4 @@ def mail(email):
     dot = symbol[1]
     if "." not in dot or dot.startswith(".") or dot.endswith("."):    
         return False
+    return True
