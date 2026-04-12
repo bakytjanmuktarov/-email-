@@ -1,2 +1,1 @@
-# -email-
-Проект по Introduction to speciality 
+# проверка email(Легкая логика)
