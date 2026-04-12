@@ -17,3 +17,5 @@ def mail(email):
             break
         if mail(x):
             print("✅Ваш email:",x.strip(),"корректен!")
+        else:   
+            print("❌ОШИБКА:", x , "не является правильным email.")
