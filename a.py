@@ -12,3 +12,6 @@ def mail(email):
     print("ПРОВЕРКА EMAIL")
     while True:
         x = input("Введите email (или 'выход' для того что бы выйти): ")
+        if x.lower() in ['выход']: 
+            print("Пока, спасибо что использовали мой код") 
+            break
