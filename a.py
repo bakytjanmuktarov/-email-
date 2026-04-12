@@ -9,3 +9,4 @@ def mail(email):
     if "." not in b or b.startswith(".") or b.endswith("."):
         return False
     return True
+    print("ПРОВЕРКА EMAIL")
