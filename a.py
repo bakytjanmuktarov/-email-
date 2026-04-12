@@ -15,3 +15,5 @@ while True:
     if user.lower() in ['выход']: 
         print("Пока, спасибо что использовали мой код") 
         break    
+    if mail(user):
+        print("✅Ваш email:",user.strip(),"корректен!")
