@@ -14,6 +14,9 @@ def mail(email):
         if char.isdigit():
             return False
     rus="абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+    for char in email:
+        if char in rus:
+            return False
     return True
 print("ПРОВЕРКА EMAIL")
 while True:
