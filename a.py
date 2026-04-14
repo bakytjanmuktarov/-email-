@@ -10,6 +10,9 @@ def mail(email):
     dot = symbol[1]
     if "." not in dot or dot.startswith(".") or dot.endswith(".") or ".." in dot:    
         return False
+    for char in dot:
+        if char.isdigit():
+            return False
     return True
 print("ПРОВЕРКА EMAIL")
 while True:
