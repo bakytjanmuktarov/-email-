@@ -8,7 +8,7 @@ def mail(email):
     if len(symbol[0]) == 0 or len(symbol[1]) == 0:
         return False 
     dot = symbol[1]
-    if "." not in dot or dot.startswith(".") or dot.endswith("."):    
+    if "." not in dot or dot.startswith(".") or dot.endswith(".") or ".." in dot:    
         return False
     return True
 print("ПРОВЕРКА EMAIL")
