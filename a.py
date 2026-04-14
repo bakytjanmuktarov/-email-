@@ -17,6 +17,8 @@ def mail(email):
     for char in email:
         if char in rus:
             return False
+    if ' ' in email:
+        return False
     return True
 print("===============================ПРОВЕРКА EMAIL================================")
 while True:
